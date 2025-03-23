@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto p5</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="fundo">
+            <div id="semifundo">
+                <header>
+                    <h1>Corrida dos Phantom Thieves</h1>
+                </header>
+                <div class="caixaregras">
+                    <button id="botao1">Clique aqui para ver as regras</button>
+                    <div id="conteudo">
+                        <h2>Regras:</h2>
+                        <ul>
+                            <li>O objetivo do jogo é alcançar a linha de chegada primeiro.</li>
+                            <li>Futaba (personagem de cabelo ruivo, na parte superior): pressione "P" para que ela se mova.</li>
+                            <li>Joker (personagem de cabelo preto, na parte inferior): pressione "Q" para que ele se mova.</li>
+                            <li>O jogo começa ao clicar na imagem</li>
+                            <li id="mensagemsecreta">"Caramba, que pinto enorme" by Peter Griffin</li>
+                            <button id="botao2">Fechar regras</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="jogo">
+            <img src="fundo2.png" id="inicial">
+            <img src="futaba.png" id="futaba">
+            <img src="joker.png" id="joker">
+            <img src="campo.png" id="final">
+        </div>
+
+    </main>
+
+    <audio src="som.mp3"  controls autoplay loop;></audio>
+
+    <footer>
+        <p>Projeto desenvolvido por <a href="https://github.com/NathanEABev/" target="_blank" rel="external">Nathan Bevilaqua</a></p>
+    </footer>
+    
+    <script src="sketch.js"></script>
+</body>
+</html>

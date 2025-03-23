@@ -1,0 +1,164 @@
+@font-face {
+    font-family: per5;
+    src: url(titulo.otf);
+}
+
+@font-face {
+    font-family: outrafonte;
+    src: url(outrafonte.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+#fundo {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 20px;
+}
+
+header {
+    font-family: per5;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
+}
+
+#regras {
+    display: none;
+}
+
+h2 {
+    font-family: per5;
+    font-size: 40px;
+}
+
+#botao1, #botao2 {
+    font-family: per5;
+    color: white;
+    width: 250px;
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(165, 2, 2);
+    padding: 15px;
+    border-radius: 55px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
+    font-size: 30px;
+}
+
+#botao1 {
+    margin-top: 2em;
+}
+
+#conteudo {
+    display: none;
+    padding: 10px 0;
+    transition: 0.5s ;
+}
+
+ul {
+    margin: 16px;
+}
+
+li {
+    font-family: outrafonte;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 15vw;
+    margin-right: 10vw;
+}
+
+#mensagemsecreta {
+    color: rgba(255, 255, 255, 0.0);
+}
+
+#mensagemsecrea::before {
+    content: normal;
+    color: rgb(56, 13, 227);
+    opacity: 100%;
+}
+
+#Mcanvas {
+    display: block;
+}
+
+audio {
+    display: none;
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 0;
+    font-family: outrafonte;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: per5;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer a:hover {
+    color: rgb(165, 2, 2);
+    text-decoration: underline;
+}
+
+#jogo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em auto 2em;
+    width: fit-content;
+    height: fit-content;
+}
+
+#inicial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+#final {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 96;
+    pointer-events: none;
+}
+
+#futaba, #joker {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: auto;
+    z-index: 98;
+}
+
+#futaba {
+    top: 20%;
+}
+
+#joker {
+    bottom: 20%;
+}
